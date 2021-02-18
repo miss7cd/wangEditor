@@ -26,7 +26,7 @@ describe('Create Table Util', () => {
         expect(document.execCommand).toBeCalledWith(
             'insertHTML',
             false,
-            `<table border="0" width="100%" cellpadding="0" cellspacing="0"><tbody><tr><th></th></tr><tr><td></td></tr></tbody></table><p><br></p>`
+            `<table border="0" width="100%" cellpadding="0" cellspacing="0"><tbody><tr><th></th></tr><tr><td></td></tr></tbody></table><p data-we-empty-p><br></p>`
         )
     })
 

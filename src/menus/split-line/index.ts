@@ -53,7 +53,7 @@ class splitLine extends BtnMenu implements MenuActive {
      */
     private createSplitLine(): void {
         // 防止插入分割线时没有占位元素的尴尬
-        let splitLineDOM: string = '<hr/><p><br/></p>'
+        let splitLineDOM: string = '<hr/><p data-we-empty-p><br></p>'
         // 火狐浏览器不需要br标签占位
         if (UA.isFirefox) {
             splitLineDOM = '<hr/><p></p>'
